@@ -41,5 +41,16 @@ This is the result. Now we can use our new display resolution.
 
 ![Widescreen display](/screenshot/preview2.png)
 
+But there is an issue. When we log out or restart the system, our configuration will gone. So we have to create an executable file, mine named `widescreen-resolution.sh`, and copy all `xrandr` command above:
+
+```bash
+touch widescreen-resolution.sh
+chmod +x widescreen-resolution.sh
+```
+
+Now we can register it to Application Autostart like this picture below:
+
+![Widescreen display](/screenshot/preview3.png)
+
 ### Note
 I put the UMC installer here if it's not available anymore.
