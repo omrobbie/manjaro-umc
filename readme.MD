@@ -31,8 +31,8 @@ Copy the output result and add new resolution mode using `xrandr` like this exam
 
 ```bash
 xrandr --newmode "2560x1080x59.98"  181.250000  2560 2608 2640 2720  1080 1083 1087 1111  +HSync -VSync
-
 xrandr --addmode HDMI3 "2560x1080x59.98"
+xrandr --output HDMI3 --mode "2560x1080x59.98" --rotate normal
 ```
 
 If you see there is HDMI3, it's because my display is on that port. You can use `xrandr` command to find your display port.
